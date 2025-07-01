@@ -15,6 +15,8 @@ Le projet s'articule autour d'un pipeline en quatre étapes séquentielles, où 
 3.  **Standardisation (IIIF)** : Les métadonnées descriptives et sémantiques sont agrégées pour générer un manifeste au format IIIF Presentation API 3.0 pour chaque image, garantissant une interopérabilité maximale.
 4.  **Exploration (PoC)** : Une preuve de concept sous la forme d'une page web interactive est développée. Elle intègre la visionneuse Mirador 3 pour permettre la navigation, la comparaison et l'étude du corpus enrichi.
 
+** Note ** Un déploiment du PoC est disponsible sur github pages [ici](https://github.com/SeidSmatti/candidature-pictoria/deployments/github-pages)
+
 ## Compétences Démontrées
 
 Ce projet met en œuvre les compétences suivantes, requises par la fiche de poste :
