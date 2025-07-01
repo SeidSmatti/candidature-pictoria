@@ -1,6 +1,6 @@
 {
     "@context": "http://iiif.io/api/presentation/3/context.json",
-    "id": "https://https://github.com/SeidSmatti/candidature-pictoriadocs/manifests/05.json",
+    "id": "https://SeidSmatti.github.io/candidature-pictoria/docs/manifests/05.json",
     "type": "Manifest",
     "label": {
         "fr": [
@@ -71,27 +71,27 @@
     ],
     "items": [
         {
-            "id": "https://https://github.com/SeidSmatti/candidature-pictoriadocs/manifests/05/canvas/1",
+            "id": "https://SeidSmatti.github.io/candidature-pictoria/docs/manifests/05/canvas/1",
             "type": "Canvas",
             "height": 1200,
             "width": 1000,
             "items": [
                 {
-                    "id": "https://https://github.com/SeidSmatti/candidature-pictoriadocs/manifests/05/canvas/1/page",
+                    "id": "https://SeidSmatti.github.io/candidature-pictoria/docs/manifests/05/canvas/1/page",
                     "type": "AnnotationPage",
                     "items": [
                         {
-                            "id": "https://https://github.com/SeidSmatti/candidature-pictoriadocs/manifests/05/canvas/1/annotation",
+                            "id": "https://SeidSmatti.github.io/candidature-pictoria/docs/manifests/05/canvas/1/annotation",
                             "type": "Annotation",
                             "motivation": "painting",
                             "body": {
-                                "id": "https://https://github.com/SeidSmatti/candidature-pictoriacorpus/images/05.jpg",
+                                "id": "https://SeidSmatti.github.io/candidature-pictoria/corpus/images/05.jpg",
                                 "type": "Image",
                                 "format": "image/jpeg",
                                 "height": 1200,
                                 "width": 1000
                             },
-                            "target": "https://https://github.com/SeidSmatti/candidature-pictoriadocs/manifests/05/canvas/1"
+                            "target": "https://SeidSmatti.github.io/candidature-pictoria/docs/manifests/05/canvas/1"
                         }
                     ]
                 }

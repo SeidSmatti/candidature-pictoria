@@ -8,7 +8,7 @@ METS_FILE_PATH = PROJECT_ROOT / 'corpus/METS.xml'
 AI_RESULTS_PATH = PROJECT_ROOT / 'corpus/ai_results.json'
 OUTPUT_DIR = PROJECT_ROOT / 'docs/manifests/'
 
-BASE_URL = "https://https://github.com/SeidSmatti/candidature-pictoria"
+BASE_URL = "https://SeidSmatti.github.io/candidature-pictoria/"
 
 # --- Création du dossier de sortie s'il n'existe pas ---
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
