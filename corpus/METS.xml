@@ -1,0 +1,165 @@
+<?xml version="1.0" ?>
+<mets:mets xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <mets:metsHdr CREATEDATE="2025-07-01T22:30:00Z">
+    <mets:agent ROLE="CREATOR" TYPE="INDIVIDUAL">
+      <mets:name>Seïd Smatti</mets:name>
+    </mets:agent>
+  </mets:metsHdr>
+  <mets:dmdSec>
+    <mets:mdWrap ID="dmd_01" MDTYPE="DC">
+      <mets:xmlData>
+        <dc:title>Machine à élever de l'eau</dc:title>
+        <dc:creator>Gallon, Jean-Gaffin</dc:creator>
+        <dc:date>1735</dc:date>
+        <dc:source>https://images.bnf.fr/#/detail/1948092/1</dc:source>
+      </mets:xmlData>
+    </mets:mdWrap>
+    <mets:mdWrap ID="dmd_02" MDTYPE="DC">
+      <mets:xmlData>
+        <dc:title>Application de la machine à élever de l'eau</dc:title>
+        <dc:creator>Dheulland, Guillaume</dc:creator>
+        <dc:date>1735</dc:date>
+        <dc:source>https://images.bnf.fr/#/detail/1948092/2</dc:source>
+      </mets:xmlData>
+    </mets:mdWrap>
+    <mets:mdWrap ID="dmd_03" MDTYPE="DC">
+      <mets:xmlData>
+        <dc:title>Fosse commune à Montmartre</dc:title>
+        <dc:creator>Goncourt, Edmond</dc:creator>
+        <dc:date>1876</dc:date>
+        <dc:source>https://images.bnf.fr/#/detail/1948092/3</dc:source>
+      </mets:xmlData>
+    </mets:mdWrap>
+    <mets:mdWrap ID="dmd_04" MDTYPE="DC">
+      <mets:xmlData>
+        <dc:title>Expériences faites en mer avec la machine hydrostatergatique</dc:title>
+        <dc:date>1750</dc:date>
+        <dc:source>https://images.bnf.fr/#/detail/1948092/4</dc:source>
+      </mets:xmlData>
+    </mets:mdWrap>
+    <mets:mdWrap ID="dmd_05" MDTYPE="DC">
+      <mets:xmlData>
+        <dc:title>En haut : atelier de tourbage. En bas : bêches à tourber, brouette, piles de tourbe, vis d'Archimède, bascule... (L'art du tourbier)</dc:title>
+        <dc:creator>Bertrand, Elie</dc:creator>
+        <dc:date>1783</dc:date>
+        <dc:source>https://images.bnf.fr/#/detail/1948092/5</dc:source>
+      </mets:xmlData>
+    </mets:mdWrap>
+    <mets:mdWrap ID="dmd_06" MDTYPE="DC">
+      <mets:xmlData>
+        <dc:title>Machine à électricité dans le goût de celles de M. Hauksbee à Londres et de M. Hausen à Leipsic</dc:title>
+        <dc:creator>Flipart, Jean</dc:creator>
+        <dc:date>1748</dc:date>
+        <dc:source>https://images.bnf.fr/#/detail/1948092/6</dc:source>
+      </mets:xmlData>
+    </mets:mdWrap>
+    <mets:mdWrap ID="dmd_07" MDTYPE="DC">
+      <mets:xmlData>
+        <dc:title>Impression du journal L'Echo de Paris, édition du 10 octobre 1931</dc:title>
+        <dc:date>1931</dc:date>
+        <dc:source>https://images.bnf.fr/#/detail/1948092/7</dc:source>
+      </mets:xmlData>
+    </mets:mdWrap>
+    <mets:mdWrap ID="dmd_08" MDTYPE="DC">
+      <mets:xmlData>
+        <dc:title>Lettre J Alphabet. - Paris : Hachette</dc:title>
+        <dc:creator>Greenaway, Kate </dc:creator>
+        <dc:date>1885</dc:date>
+        <dc:source>https://images.bnf.fr/#/detail/1948092/8</dc:source>
+      </mets:xmlData>
+    </mets:mdWrap>
+    <mets:mdWrap ID="dmd_09" MDTYPE="DC">
+      <mets:xmlData>
+        <dc:title>Atelier de joaillerie et de bijouterie (Paris)</dc:title>
+        <dc:creator>Fichot, Charles</dc:creator>
+        <dc:date/>
+        <dc:source>https://images.bnf.fr/#/detail/1948092/9</dc:source>
+      </mets:xmlData>
+    </mets:mdWrap>
+    <mets:mdWrap ID="dmd_10" MDTYPE="DC">
+      <mets:xmlData>
+        <dc:title>https://images.bnf.fr/#/detail/1948092/10</dc:title>
+        <dc:date>1938</dc:date>
+        <dc:source>https://images.bnf.fr/#/detail/1948092/10</dc:source>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:fileSec>
+    <mets:fileGrp USE="images">
+      <mets:file ID="file_01">
+        <mets:FLocat xlink:href="images/01.jpg" LOCTYPE="URL"/>
+      </mets:file>
+      <mets:file ID="file_02">
+        <mets:FLocat xlink:href="images/02.jpg" LOCTYPE="URL"/>
+      </mets:file>
+      <mets:file ID="file_03">
+        <mets:FLocat xlink:href="images/03.jpg" LOCTYPE="URL"/>
+      </mets:file>
+      <mets:file ID="file_04">
+        <mets:FLocat xlink:href="images/04.jpg" LOCTYPE="URL"/>
+      </mets:file>
+      <mets:file ID="file_05">
+        <mets:FLocat xlink:href="images/05.jpg" LOCTYPE="URL"/>
+      </mets:file>
+      <mets:file ID="file_06">
+        <mets:FLocat xlink:href="images/06.jpg" LOCTYPE="URL"/>
+      </mets:file>
+      <mets:file ID="file_07">
+        <mets:FLocat xlink:href="images/07.jpg" LOCTYPE="URL"/>
+      </mets:file>
+      <mets:file ID="file_08">
+        <mets:FLocat xlink:href="images/08.jpg" LOCTYPE="URL"/>
+      </mets:file>
+      <mets:file ID="file_09">
+        <mets:FLocat xlink:href="images/09.jpg" LOCTYPE="URL"/>
+      </mets:file>
+      <mets:file ID="file_10">
+        <mets:FLocat xlink:href="images/10.jpg" LOCTYPE="URL"/>
+      </mets:file>
+    </mets:fileGrp>
+  </mets:fileSec>
+  <mets:structMap TYPE="PHYSICAL">
+    <mets:div TYPE="sequence">
+      <mets:div ORDER="01">
+        <mets:mptr xlink:href="#dmd_01"/>
+        <mets:fptr FILEID="file_01"/>
+      </mets:div>
+      <mets:div ORDER="02">
+        <mets:mptr xlink:href="#dmd_02"/>
+        <mets:fptr FILEID="file_02"/>
+      </mets:div>
+      <mets:div ORDER="03">
+        <mets:mptr xlink:href="#dmd_03"/>
+        <mets:fptr FILEID="file_03"/>
+      </mets:div>
+      <mets:div ORDER="04">
+        <mets:mptr xlink:href="#dmd_04"/>
+        <mets:fptr FILEID="file_04"/>
+      </mets:div>
+      <mets:div ORDER="05">
+        <mets:mptr xlink:href="#dmd_05"/>
+        <mets:fptr FILEID="file_05"/>
+      </mets:div>
+      <mets:div ORDER="06">
+        <mets:mptr xlink:href="#dmd_06"/>
+        <mets:fptr FILEID="file_06"/>
+      </mets:div>
+      <mets:div ORDER="07">
+        <mets:mptr xlink:href="#dmd_07"/>
+        <mets:fptr FILEID="file_07"/>
+      </mets:div>
+      <mets:div ORDER="08">
+        <mets:mptr xlink:href="#dmd_08"/>
+        <mets:fptr FILEID="file_08"/>
+      </mets:div>
+      <mets:div ORDER="09">
+        <mets:mptr xlink:href="#dmd_09"/>
+        <mets:fptr FILEID="file_09"/>
+      </mets:div>
+      <mets:div ORDER="10">
+        <mets:mptr xlink:href="#dmd_10"/>
+        <mets:fptr FILEID="file_10"/>
+      </mets:div>
+    </mets:div>
+  </mets:structMap>
+</mets:mets>

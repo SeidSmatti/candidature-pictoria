@@ -1,0 +1,101 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://https://github.com/SeidSmatti/candidature_PictorIAdocs/manifests/06.json",
+    "type": "Manifest",
+    "label": {
+        "fr": [
+            "Machine à électricité dans le goût de celles de M. Hauksbee à Londres et de M. Hausen à Leipsic"
+        ]
+    },
+    "metadata": [
+        {
+            "label": {
+                "fr": [
+                    "Titre"
+                ]
+            },
+            "value": {
+                "fr": [
+                    "Machine à électricité dans le goût de celles de M. Hauksbee à Londres et de M. Hausen à Leipsic"
+                ]
+            }
+        },
+        {
+            "label": {
+                "fr": [
+                    "Créateur"
+                ]
+            },
+            "value": {
+                "fr": [
+                    "Flipart, Jean"
+                ]
+            }
+        },
+        {
+            "label": {
+                "fr": [
+                    "Date"
+                ]
+            },
+            "value": {
+                "fr": [
+                    "1748"
+                ]
+            }
+        },
+        {
+            "label": {
+                "fr": [
+                    "Source"
+                ]
+            },
+            "value": {
+                "none": [
+                    "<a href='https://images.bnf.fr/#/detail/1948092/6' target='_blank' rel='noopener noreferrer'>Voir la notice originale (BnF)</a>"
+                ]
+            }
+        },
+        {
+            "label": {
+                "fr": [
+                    "Analyse IA (tags)"
+                ]
+            },
+            "value": {
+                "fr": [
+                    "scène de travail, schéma technique, photographie industrielle, illustration, document imprimé, scène historique ou allégorique, gravure de paysage"
+                ]
+            }
+        }
+    ],
+    "items": [
+        {
+            "id": "https://https://github.com/SeidSmatti/candidature_PictorIAdocs/manifests/06/canvas/1",
+            "type": "Canvas",
+            "height": 1200,
+            "width": 1000,
+            "items": [
+                {
+                    "id": "https://https://github.com/SeidSmatti/candidature_PictorIAdocs/manifests/06/canvas/1/page",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://https://github.com/SeidSmatti/candidature_PictorIAdocs/manifests/06/canvas/1/annotation",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "body": {
+                                "id": "https://https://github.com/SeidSmatti/candidature_PictorIAcorpus/images/06.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "height": 1200,
+                                "width": 1000
+                            },
+                            "target": "https://https://github.com/SeidSmatti/candidature_PictorIAdocs/manifests/06/canvas/1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

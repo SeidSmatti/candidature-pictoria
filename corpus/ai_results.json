@@ -1,0 +1,202 @@
+{
+    "01.jpg": {
+        "labels": [
+            "photographie industrielle",
+            "scène de travail",
+            "gravure de paysage",
+            "schéma technique",
+            "document imprimé",
+            "illustration",
+            "scène historique ou allégorique"
+        ],
+        "scores": [
+            0.2746,
+            0.2292,
+            0.1721,
+            0.1527,
+            0.1299,
+            0.03,
+            0.0115
+        ]
+    },
+    "02.jpg": {
+        "labels": [
+            "photographie industrielle",
+            "scène de travail",
+            "gravure de paysage",
+            "schéma technique",
+            "illustration",
+            "scène historique ou allégorique",
+            "document imprimé"
+        ],
+        "scores": [
+            0.7548,
+            0.1065,
+            0.1045,
+            0.0232,
+            0.0082,
+            0.0018,
+            0.0011
+        ]
+    },
+    "03.jpg": {
+        "labels": [
+            "gravure de paysage",
+            "scène de travail",
+            "illustration",
+            "photographie industrielle",
+            "scène historique ou allégorique",
+            "schéma technique",
+            "document imprimé"
+        ],
+        "scores": [
+            0.6524,
+            0.2162,
+            0.0991,
+            0.024,
+            0.0043,
+            0.0027,
+            0.0013
+        ]
+    },
+    "04.jpg": {
+        "labels": [
+            "scène de travail",
+            "scène historique ou allégorique",
+            "gravure de paysage",
+            "document imprimé",
+            "illustration",
+            "schéma technique",
+            "photographie industrielle"
+        ],
+        "scores": [
+            0.6259,
+            0.2384,
+            0.0519,
+            0.0505,
+            0.0242,
+            0.0086,
+            0.0005
+        ]
+    },
+    "05.jpg": {
+        "labels": [
+            "scène de travail",
+            "gravure de paysage",
+            "photographie industrielle",
+            "schéma technique",
+            "illustration",
+            "document imprimé",
+            "scène historique ou allégorique"
+        ],
+        "scores": [
+            0.5548,
+            0.3237,
+            0.0707,
+            0.0326,
+            0.0101,
+            0.0075,
+            0.0006
+        ]
+    },
+    "06.jpg": {
+        "labels": [
+            "scène de travail",
+            "schéma technique",
+            "photographie industrielle",
+            "illustration",
+            "document imprimé",
+            "scène historique ou allégorique",
+            "gravure de paysage"
+        ],
+        "scores": [
+            0.7856,
+            0.1176,
+            0.0547,
+            0.0221,
+            0.017,
+            0.0023,
+            0.0007
+        ]
+    },
+    "07.jpg": {
+        "labels": [
+            "photographie industrielle",
+            "schéma technique",
+            "scène de travail",
+            "document imprimé",
+            "illustration",
+            "scène historique ou allégorique",
+            "gravure de paysage"
+        ],
+        "scores": [
+            0.6773,
+            0.1617,
+            0.1167,
+            0.0262,
+            0.0147,
+            0.0028,
+            0.0005
+        ]
+    },
+    "08.jpg": {
+        "labels": [
+            "illustration",
+            "document imprimé",
+            "schéma technique",
+            "photographie industrielle",
+            "scène de travail",
+            "gravure de paysage",
+            "scène historique ou allégorique"
+        ],
+        "scores": [
+            0.8136,
+            0.116,
+            0.03,
+            0.0213,
+            0.0132,
+            0.0051,
+            0.0009
+        ]
+    },
+    "09.jpg": {
+        "labels": [
+            "scène de travail",
+            "photographie industrielle",
+            "document imprimé",
+            "illustration",
+            "scène historique ou allégorique",
+            "schéma technique",
+            "gravure de paysage"
+        ],
+        "scores": [
+            0.9143,
+            0.0807,
+            0.0024,
+            0.0015,
+            0.0007,
+            0.0003,
+            0.0001
+        ]
+    },
+    "10.jpg": {
+        "labels": [
+            "scène de travail",
+            "document imprimé",
+            "scène historique ou allégorique",
+            "photographie industrielle",
+            "schéma technique",
+            "gravure de paysage",
+            "illustration"
+        ],
+        "scores": [
+            0.9851,
+            0.0086,
+            0.0039,
+            0.002,
+            0.0002,
+            0.0001,
+            0.0
+        ]
+    }
+}

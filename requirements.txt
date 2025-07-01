@@ -1,0 +1,12 @@
+# Dépendances principales pour le pipeline de traitement
+transformers
+torch
+Pillow
+
+# Dépendances pour l'environnement Jupyter Notebook
+jupyterlab
+ipywidgets
+ipykernel
+
+# Dépendance optionnelle pour des téléchargements optimisés depuis Hugging Face
+hf_xet

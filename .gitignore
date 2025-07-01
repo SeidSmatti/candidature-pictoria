@@ -1,0 +1,16 @@
+# Fichiers et dossiers de l'environnement virtuel Python
+venv/
+/venv/
+__pycache__/
+*.pyc
+
+# Fichiers de configuration des éditeurs et IDE
+.vscode/
+.idea/
+
+# Fichiers de système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Fichiers de cache Jupyter Notebook
+.ipynb_checkpoints

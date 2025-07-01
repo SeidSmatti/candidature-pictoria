@@ -1,0 +1,89 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://https://github.com/SeidSmatti/candidature_PictorIAdocs/manifests/04.json",
+    "type": "Manifest",
+    "label": {
+        "fr": [
+            "Expériences faites en mer avec la machine hydrostatergatique"
+        ]
+    },
+    "metadata": [
+        {
+            "label": {
+                "fr": [
+                    "Titre"
+                ]
+            },
+            "value": {
+                "fr": [
+                    "Expériences faites en mer avec la machine hydrostatergatique"
+                ]
+            }
+        },
+        {
+            "label": {
+                "fr": [
+                    "Date"
+                ]
+            },
+            "value": {
+                "fr": [
+                    "1750"
+                ]
+            }
+        },
+        {
+            "label": {
+                "fr": [
+                    "Source"
+                ]
+            },
+            "value": {
+                "none": [
+                    "<a href='https://images.bnf.fr/#/detail/1948092/4' target='_blank' rel='noopener noreferrer'>Voir la notice originale (BnF)</a>"
+                ]
+            }
+        },
+        {
+            "label": {
+                "fr": [
+                    "Analyse IA (tags)"
+                ]
+            },
+            "value": {
+                "fr": [
+                    "scène de travail, scène historique ou allégorique, gravure de paysage, document imprimé, illustration, schéma technique, photographie industrielle"
+                ]
+            }
+        }
+    ],
+    "items": [
+        {
+            "id": "https://https://github.com/SeidSmatti/candidature_PictorIAdocs/manifests/04/canvas/1",
+            "type": "Canvas",
+            "height": 1200,
+            "width": 1000,
+            "items": [
+                {
+                    "id": "https://https://github.com/SeidSmatti/candidature_PictorIAdocs/manifests/04/canvas/1/page",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://https://github.com/SeidSmatti/candidature_PictorIAdocs/manifests/04/canvas/1/annotation",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "body": {
+                                "id": "https://https://github.com/SeidSmatti/candidature_PictorIAcorpus/images/04.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "height": 1200,
+                                "width": 1000
+                            },
+                            "target": "https://https://github.com/SeidSmatti/candidature_PictorIAdocs/manifests/04/canvas/1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
