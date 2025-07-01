@@ -73,6 +73,7 @@ Pour reproduire ce projet en local :
     Puis, ouvrez votre navigateur à l'adresse `http://localhost:8000/docs/`.
 
 ## Structure du Projet
+```
 .
 ├── corpus/               # Données brutes et générées
 │   ├── images/
@@ -92,6 +93,7 @@ Pour reproduire ce projet en local :
 ├── .gitignore            # Fichiers à ignorer par Git
 ├── README.md             # Ce fichier
 └── requirements.txt      # Dépendances Python
+```
 
 ## Pistes d'amélioration
 
