@@ -78,6 +78,7 @@ Pour reproduire ce projet en local :
 │   ├── METS.xml
 │   └── ai_results.json
 ├── docs/                 # Fichiers de la démo en ligne (GitHub Pages)
+│   ├── images/           # Rajouté en double pour GH pages
 │   ├── manifests/
 │   ├── index.html
 │   └── ...

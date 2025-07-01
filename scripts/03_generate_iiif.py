@@ -1,44 +1,51 @@
 import json
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from PIL import Image
 
 # --- Configuration ---
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 METS_FILE_PATH = PROJECT_ROOT / 'corpus/METS.xml'
 AI_RESULTS_PATH = PROJECT_ROOT / 'corpus/ai_results.json'
+IMAGE_DIR = PROJECT_ROOT / 'docs/images/' 
 OUTPUT_DIR = PROJECT_ROOT / 'docs/manifests/'
 
+# --- URL de base, qui est correcte ---
 BASE_URL = "https://SeidSmatti.github.io/candidature-pictoria/"
 
-# --- Création du dossier de sortie s'il n'existe pas ---
+# --- Création du dossier de sortie ---
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-# --- Chargement des données sources ---
-print("Étape 1: Chargement des données (METS et résultats IA)...")
-try:
-    with open(AI_RESULTS_PATH, 'r', encoding='utf-8') as f:
-        ai_results = json.load(f)
-
-    mets_tree = ET.parse(METS_FILE_PATH)
-    mets_root = mets_tree.getroot()
-    namespaces = {
-        'mets': 'http://www.loc.gov/METS/',
-        'dc': 'http://purl.org/dc/elements/1.1/',
-        'xlink': 'http://www.w3.org/1999/xlink'
-    }
-    print("Données chargées avec succès.")
-except FileNotFoundError as e:
-    print(f"Erreur : Fichier non trouvé - {e}. Assurez-vous d'avoir exécuté les scripts précédents.")
-    raise SystemExit
+# --- Chargement des données ---
+print("Étape 1: Chargement des données sources...")
+with open(AI_RESULTS_PATH, 'r', encoding='utf-8') as f:
+    ai_results = json.load(f)
+mets_tree = ET.parse(METS_FILE_PATH)
+mets_root = mets_tree.getroot()
+namespaces = {
+    'mets': 'http://www.loc.gov/METS/',
+    'dc': 'http://purl.org/dc/elements/1.1/',
+    'xlink': 'http://www.w3.org/1999/xlink'
+}
+print("Données chargées.")
 
 # --- Génération des manifestes ---
-print("\nÉtape 2: Génération des manifestes IIIF (un par image)...")
+print("\nÉtape 2: Génération des manifestes IIIF...")
 manifest_count = 0
 for div in mets_root.findall('.//mets:div[@ORDER]', namespaces):
     order_id = div.get('ORDER')
     image_filename = f"{order_id}.jpg"
-    
-    # Récupération des métadonnées depuis le fichier METS
+    image_path = IMAGE_DIR / image_filename
+
+    # Récupération des dimensions réelles de l'image
+    try:
+        with Image.open(image_path) as img:
+            width, height = img.size
+    except FileNotFoundError:
+        print(f"  /!\\ Image {image_filename} non trouvée, utilisation de dimensions par défaut.")
+        width, height = 1000, 1200 # Fallback
+
+    # Récupération des métadonnées depuis le METS
     dmd_id_ref = div.find('.//mets:mptr', namespaces).get(f'{{{namespaces["xlink"]}}}href')
     dmd_id = dmd_id_ref.lstrip('#')
     dmd_element = mets_root.find(f".//mets:mdWrap[@ID='{dmd_id}']", namespaces)
@@ -48,10 +55,10 @@ for div in mets_root.findall('.//mets:div[@ORDER]', namespaces):
     date = dmd_element.find('.//dc:date', namespaces).text
     source = dmd_element.find('.//dc:source', namespaces).text
 
-    # Structure de base du manifeste (IIIF Presentation API 3.0)
+    # Construction du manifeste avec les URLs CORRIGÉES
     manifest = {
         "@context": "http://iiif.io/api/presentation/3/context.json",
-        "id": f"{BASE_URL}docs/manifests/{order_id}.json",
+        "id": f"{BASE_URL}manifests/{order_id}.json", # Correction: sans /docs/
         "type": "Manifest",
         "label": {"fr": [title]},
         "metadata": [
@@ -61,27 +68,27 @@ for div in mets_root.findall('.//mets:div[@ORDER]', namespaces):
         ],
         "items": [
             {
-                "id": f"{BASE_URL}docs/manifests/{order_id}/canvas/1",
+                "id": f"{BASE_URL}manifests/{order_id}/canvas/1", # Correction
                 "type": "Canvas",
-                "height": 1200, # Valeurs arbitraires, peuvent être extraites de l'image
-                "width": 1000,
+                "height": height,
+                "width": width,
                 "items": [
                     {
-                        "id": f"{BASE_URL}docs/manifests/{order_id}/canvas/1/page",
+                        "id": f"{BASE_URL}manifests/{order_id}/canvas/1/page", # Correction
                         "type": "AnnotationPage",
                         "items": [
                             {
-                                "id": f"{BASE_URL}docs/manifests/{order_id}/canvas/1/annotation",
+                                "id": f"{BASE_URL}manifests/{order_id}/canvas/1/annotation", # Correction
                                 "type": "Annotation",
                                 "motivation": "painting",
                                 "body": {
-                                    "id": f"{BASE_URL}corpus/images/{image_filename}",
+                                    "id": f"{BASE_URL}images/{image_filename}", # Correction: chemin direct vers les images
                                     "type": "Image",
                                     "format": "image/jpeg",
-                                    "height": 1200,
-                                    "width": 1000
+                                    "height": height,
+                                    "width": width
                                 },
-                                "target": f"{BASE_URL}docs/manifests/{order_id}/canvas/1"
+                                "target": f"{BASE_URL}manifests/{order_id}/canvas/1" # Correction
                             }
                         ]
                     }
@@ -90,11 +97,9 @@ for div in mets_root.findall('.//mets:div[@ORDER]', namespaces):
         ]
     }
     
-    # Ajout du créateur seulement s'il est présent
     if creator_element is not None and creator_element.text:
         manifest["metadata"].insert(1, {"label": {"fr": ["Créateur"]}, "value": {"fr": [creator_element.text]}})
         
-    # Ajout des tags de l'IA dans les métadonnées
     if image_filename in ai_results and 'labels' in ai_results[image_filename]:
         ai_tags = ai_results[image_filename]['labels']
         manifest["metadata"].append({
@@ -102,10 +107,9 @@ for div in mets_root.findall('.//mets:div[@ORDER]', namespaces):
             "value": {"fr": [", ".join(ai_tags)]}
         })
 
-    # Sauvegarde du manifeste individuel
     manifest_path = OUTPUT_DIR / f"{order_id}.json"
     with open(manifest_path, 'w', encoding='utf-8') as f:
         json.dump(manifest, f, ensure_ascii=False, indent=4)
     manifest_count += 1
 
-print(f"\nGénération terminée. {manifest_count} manifestes ont été créés dans le dossier : {OUTPUT_DIR}")
+print(f"\nGénération terminée. {manifest_count} manifestes corrigés ont été créés.")
